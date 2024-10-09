@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soreis Snowfall | Violin & Cello Store</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        .header {
+            background: url("images/maestro.jpeg");
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            position: relative;
+        }
+        .header h1 {
+            font-size: 4rem;
+            letter-spacing: 2px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        .header h2 {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        .header-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            z-index: 1000;
+        }
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+        }
+        nav ul li a:hover {
+            color: #e3e3e3;
+        }
+        section {
+            padding: 80px 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 2.5rem;
+            color: #333;
+        }
+        .about {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+        .about img {
+            width: 45%;
+            border-radius: 10px;
+        }
+        .about-text {
+            width: 50%;
+            padding-left: 30px;
+        }
+        .about-text h3 {
+            font-size: 2rem;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        .products {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 100px;
+        }
+        .product-item {
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .product-item:hover {
+            transform: translateY(-10px);
+        }
+        .product-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product-item h3 {
+            font-size: 1.5rem;
+            margin: 15px 0;
+        }
+        .product-item p {
+            font-size: 1rem;
+            color: #555;
+        }
+        .cta {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #333;
+            color: #fff;
+        }
+        .cta h2 {
+            font-size: 2rem;
+        }
+        .cta a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #000;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .cta a:hover {
+            background-color: #444;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <div class="header">
+        <div class="header-overlay"></div>
+        <div class="content">
+            <h1>Soreis Snowfall</h1>
+            <h2>Elegance in Every String</h2>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Soreis Snowfall</div>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="about">
+            <img src="images/vio.jpeg" alt="Violin and Cello">
+            <div class="about-text">
+                <h3>Master Craftsmanship</h3>
+                <p>At Soreis Snowfall, we pride ourselves on offering the finest violins and cellos, handcrafted by world-class artisans. Each instrument is a blend of tradition, precision, and passion, ensuring unparalleled sound and beauty. Whether you are a beginner or a maestro, we have the perfect instrument to elevate your music.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Our Instruments</h2>
+        <div class="products">
+            <div class="product-item">
+                <img src="images/classic.jpeg" alt="Violin">
+                <h3>Classic Violin</h3>
+                <p>Elegant and timeless, our violins offer exquisite sound quality for all levels of musicians.</p>
+            </div>
+            <div class="product-item">
+                <img src="images/cello.jpeg" alt="Cello">
+                <h3>Grand Cello</h3>
+                <p>Deep resonance and powerful tones, crafted for those who demand the best in every performance.</p>
+            </div>
+            <div class="product-item">
+                <img src="images/electric.jpeg" alt="Electric Violin">
+                <h3>Electric Violin</h3>
+                <p>For the modern musician, this violin blends tradition with cutting-edge technology for unique soundscapes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <div class="cta">
+        <h2>Ready to Elevate Your Music?</h2>
+        <a href="#contact">Contact Us Now</a>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Soreis Snowfall. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
